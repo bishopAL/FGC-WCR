@@ -12,6 +12,14 @@
 int main(int argc, char* argv[]) {
     struct timeval startTime, endTime;
     std::string model_path;
+    
+    auto qengines = at::globalContext().supportedQEngines();
+
+if (std::find(qengines.begin(), qengines.end(), at::QEngine::QNNPACK) != qengines.end()) {
+
+    at::globalContext().setQEngine(at::QEngine::QNNPACK);
+
+}
     if (argc==1)
         model_path = "../model/model.pth";
     else
