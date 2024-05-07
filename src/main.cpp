@@ -34,6 +34,7 @@ if (std::find(qengines.begin(), qengines.end(), at::QEngine::QNNPACK) != qengine
         // 创建一个输入张量
         torch::Tensor tensorInput = torch::tensor({0.11412254, -0.09698317, -0.13648682, -0.08168529,  0.09584415,
         -0.08081015});
+        tensorInput = tensorInput.reshape({1, 6});
         std::vector<torch::jit::IValue> inputs;
         inputs.push_back(tensorInput); // 假设输入是1x6大小
         // 进行预测
