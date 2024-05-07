@@ -9,16 +9,12 @@
 #include <unistd.h>
 
 
-int main(int argc, char* argv[]) {
+int main() {
     struct timeval startTime, endTime;
-    std::string model_path;
-    if (argc==1)
-        model_path = "../model/model.pth";
-    else
-        model_path = argv[1];
+    // 序列化的模型文件的路径
+    std::string model_path = "../model/model.pth";
     try {
         // 加载序列化的模型
-        std::cout<<model_path<<std::endl;
         torch::jit::script::Module module;
         module = torch::jit::load(model_path);
         module.eval();
@@ -29,9 +25,9 @@ int main(int argc, char* argv[]) {
         std::vector<torch::jit::IValue> inputs;
         inputs.push_back(tensorInput); // 假设输入是1x6大小
         // 进行预测
-	    gettimeofday(&startTime, NULL);
+	gettimeofday(&startTime, NULL);
         at::Tensor output = module.forward(inputs).toTensor();
-	    gettimeofday(&endTime, NULL);
+	gettimeofday(&endTime, NULL);
         float timeConsuming = (endTime.tv_sec - startTime.tv_sec)*1e3 + (endTime.tv_usec - startTime.tv_usec)*1e-3;
         std::cout <<"Infer value: "<< output << std::endl;
         torch::Tensor outputReal = torch::tensor({-0.01443261, -0.01519005, -0.02687549});
