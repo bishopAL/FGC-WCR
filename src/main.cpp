@@ -1,4 +1,4 @@
-#include <ATen/ops/tensor.h>
+#include <torch/torch.h>
 #include <torch/script.h> // One-stop header.
 #include <iostream>
 #include <memory>
@@ -8,7 +8,7 @@
 
 
 int main() {
-    struct timeval startTime, endTime;
+    // struct timeval startTime, endTime;
     // 序列化的模型文件的路径
     std::string model_path = "../model/model.pth";
     try {
@@ -23,7 +23,7 @@ int main() {
         inputs.push_back(tensorInput); // 假设输入是1x6大小
         // 进行预测
         at::Tensor output = module.forward(inputs).toTensor();
-        float timeConsuming = (endTime.tv_sec - startTime.tv_sec)*1e3 + (endTime.tv_usec - startTime.tv_usec)*1e-3;
+       // float timeConsuming = (endTime.tv_sec - startTime.tv_sec)*1e3 + (endTime.tv_usec - startTime.tv_usec)*1e-3;
         std::cout <<"Infer value: "<< output << std::endl;
         torch::Tensor outputReal = torch::tensor({-0.01443261, -0.01519005, -0.02687549});
         std::cout <<"Real value: "<<  outputReal << std::endl;
