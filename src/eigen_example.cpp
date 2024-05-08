@@ -49,10 +49,13 @@ MatrixXd relu(const MatrixXd& x) {
 int main() {
     struct timeval startTime, endTime;
     // Load weights and biases
-    MatrixXd W1 = load_matrix("../model/fc1.weight_weight.txt", 6, 6);
-    VectorXd b1 = load_vector("../model/fc1.bias_weight.txt", 6);
-    MatrixXd W2 = load_matrix("../model/fc2.weight_weight.txt", 3, 6);
-    VectorXd b2 = load_vector("../model/fc2.bias_weight.txt", 3);
+    int inputNum = 6;
+    int layer1Num = 8;
+    int outputNum = 3;
+    MatrixXd W1 = load_matrix("../model/fc1.weight_weight.txt", layer1Num, inputNum);
+    VectorXd b1 = load_vector("../model/fc1.bias_weight.txt", layer1Num);
+    MatrixXd W2 = load_matrix("../model/fc2.weight_weight.txt", outputNum, layer1Num);
+    VectorXd b2 = load_vector("../model/fc2.bias_weight.txt", outputNum);
 
     // Example input
     VectorXd input(6);
