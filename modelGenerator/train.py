@@ -56,7 +56,7 @@ with torch.no_grad():
 
 # save the model
 scripted_model = torch.jit.script(model)
-torch.jit.save(scripted_model, 'model.pth')
+torch.jit.save(scripted_model, '../model/model.pth')
 
 data = loadmat('testingData.mat')
 test_data = data['dataRecord']
