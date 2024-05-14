@@ -1,5 +1,7 @@
 # Feedforward Gravity Compensation for a Wall Climbing Robot
 
+![](https://github.com/bishopAL/FeedforwardGravityCompensation-WCR/blob/main/videos/s1.gif)
+
 ## Structure
 
 *Script* folder contains a MATLAB function and a script to calculate the gravity compensation leg position.
