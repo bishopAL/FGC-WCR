@@ -61,6 +61,7 @@ public:
     Matrix<float, 1, 3> mfSwingVelocity;
     Matrix<float, 4, 3> mfJointCompDis;  // compensation joint angle
     Matrix<float, 4, 3> mfCompensation;
+    Matrix<float, 4, 3> mfLegCmdCompPos;
     Matrix<float, 3, 1> mfCompensationZ;
     bool BSwingPhaseStartFlag, BSwingPhaseEndFlag;
     vector<float> vLastSetPos;
