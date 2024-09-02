@@ -5,10 +5,10 @@ bool swingtimeFlag = false;
 CGebot::CGebot(float length,float width,float height,float mass)
 {
     //dxlMotors.init("/dev/ttyAMA0", 1000000, ID, 2);  // CAN NOT 4M.   ttyUSB0 ttyAMA0      
-    m_glLeg[0] = new CLeg(LF,65.5,70.0,21.0);  // mm
-    m_glLeg[1] = new CLeg(RF,65.5,70.0,21.0);
-    m_glLeg[2] = new CLeg(LH,65.5,84.0,21.0);
-    m_glLeg[3] = new CLeg(RH,65.5,84.0,21.0); //24
+    m_glLeg[0] = new CLeg(LF,65.5,70.0,30.0);  // mm
+    m_glLeg[1] = new CLeg(RF,65.5,70.0,30.0);
+    m_glLeg[2] = new CLeg(LH,65.5,70.0,30.0);
+    m_glLeg[3] = new CLeg(RH,65.5,70.0,30.0); //24
     m_fLength=length/1000.0;
     m_fWidth=width/1000.0;
     m_fHeight=height/1000.0;

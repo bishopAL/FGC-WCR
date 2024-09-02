@@ -76,10 +76,10 @@ int main()
     Matrix<float, 6,1> TCV;
     TCV << 3.0/1000.0, 0, 0,0,0,0 ;// X, Y , alpha 
    
-float  float_initPos[12]={   70.0,65.5,-21.0,
-                             70.0,-65.5,-21.0,
-                            -84.0, 65.5,-21.0,
-                            -84.0, -65.5,-21.0};
+float  float_initPos[12]={   70.0,65.5,-30.0,
+                             70.0,-65.5,-30.0,
+                            -70.0, 65.5,-30.0,
+                            -70.0, -65.5,-30.0};
     // float  float_initPos[12];
     // string2float("../include/initPos.csv", float_initPos);//Foot end position
     for(int i=0; i<4; i++)
@@ -163,7 +163,7 @@ float  float_initPos[12]={   70.0,65.5,-21.0,
             outFile << rbt.mfCompensationZ(index) << " ";
         }
         outFile << std::endl;
-        cout<<"mfCompensationZ: \n"<<rbt.mfCompensationZ<<"\n";//<<"mfJointCmdPos: \n"<<rbt.mfJointCmdPos<<endl;
+        cout<<"mfLegCmdCompPos: \n"<<rbt.mfLegCmdCompPos<<"\n";//<<"mfJointCmdPos: \n"<<rbt.mfJointCmdPos<<endl;
 
         rbt.UpdatejointPresPosAndVel(motorMapping(rbt.mfJointCmdPos));
         rbt.ForwardKinematics(1);
