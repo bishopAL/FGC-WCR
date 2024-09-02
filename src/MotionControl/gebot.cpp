@@ -800,8 +800,9 @@ void CGebot::fnn_stepmodify()
         //开始编写炳诚师兄布置的任务
         // rbt.NextStep();
         // cout<<"rbt.mfLegCmdPos:"<<rbt.mfLegCmdPos<<endl;
-        Matrix<float, 4, 3> temp_matrix;
-        temp_matrix = mfLegCmdPos;
+        // Matrix<float, 4, 3> mfLegCmdCompPos;
+        // mfLegCmdCompPos = mfLegCmdPos;
+        mfLegCmdCompPos = mfLegCmdPos;
 
         // if(0==swing)  123;
         // if(1) 032
@@ -809,21 +810,48 @@ void CGebot::fnn_stepmodify()
         //if(3) 210
         Matrix<float, 6, 1> input(6);
         int swingFlag = 0;
-        for(uint8_t legNum=0; legNum<4; legNum++) //遍寻4条腿
+        bool foundFlag = 0;
+        // for(uint8_t legNum=0; legNum<4; legNum++) //遍寻4条腿
+        // {
+        // // UpdateLegStatus(legNum); //更新腿的状态
+        // enum_LEGSTATUS ls=m_glLeg[legNum]->GetLegStatus(); //get present status
+        //     if(ls!=stance&&ls!=recover)
+        //     {
+        //         if(ls!=stance)
+        //         {
+        //             swingFlag = legNum;
+        //         }
+        //     }
+        
+        for(uint8_t legNum=0; legNum<4; legNum++)
         {
-        // UpdateLegStatus(legNum); //更新腿的状态
-        enum_LEGSTATUS ls=m_glLeg[legNum]->GetLegStatus(); //get present status
-            if(ls!=stance&&ls!=recover)
+            enum_LEGSTATUS ls=m_glLeg[legNum]->GetLegStatus();
+            if(ls==detach)
             {
+                foundFlag = 1;
+                swingFlag = legNum;
+                break;
+            }
+        }
+        if(foundFlag == 0)
+        {
+            for(uint8_t legNum=0; legNum<4; legNum++)
+            {
+                enum_LEGSTATUS ls=m_glLeg[legNum]->GetLegStatus();
                 if(ls!=stance)
                 {
+                    foundFlag = 1;
                     swingFlag = legNum;
+                    break;
                 }
             }
+        }
             Matrix<float, 6, 1> colVec0;
             Matrix<float, 6, 1> colVec1;
             Matrix<float, 6, 1> colVec2;
             Matrix<float, 6, 1> colVec3;
+            Matrix<float, 3, 1> output(3);
+            VectorXd inputxd(6);
             // VectorXd colVec0(6);
             // VectorXd colVec1(6);
             // VectorXd colVec2(6);
@@ -834,43 +862,65 @@ void CGebot::fnn_stepmodify()
                     // 创建一个 6x1 的列向量，用于存储提取的元素
                     
                     // 提取矩阵的第一行、第四行和第三行的前两列，并按顺序拼接到列向量中
-                    colVec0.segment<2>(0) = temp_matrix.block<1, 2>(1, 0).transpose(); // 提取第二行的前两列
-                    colVec0.segment<2>(2) = temp_matrix.block<1, 2>(2, 0).transpose(); // 提取第三行的前两列
-                    colVec0.segment<2>(4) = temp_matrix.block<1, 2>(3, 0).transpose(); // 提取第四行的前两列
+                    colVec0.segment<2>(0) = mfLegCmdCompPos.block<1, 2>(1, 0).transpose(); // 提取第二行的前两列
+                    colVec0.segment<2>(2) = mfLegCmdCompPos.block<1, 2>(2, 0).transpose(); // 提取第三行的前两列
+                    colVec0.segment<2>(4) = mfLegCmdCompPos.block<1, 2>(3, 0).transpose(); // 提取第四行的前两列
                     input = colVec0;
+                    for(int i=0; i<6; i++) inputxd(i) = input(i);
+                    output = fnn_outputcpt(inputxd);
+                    //--needed to be checked by Weilong--
+                    mfLegCmdCompPos(1,2) = output(0);
+                    mfLegCmdCompPos(2,2) = output(1);
+                    mfLegCmdCompPos(3,2) = output(2);
                     break;
                 case 1:
                     // 创建一个 6x1 的列向量，用于存储提取的元素
                     
                     // 提取矩阵的第一行、第四行和第三行的前两列，并按顺序拼接到列向量中
-                    colVec1.segment<2>(0) = temp_matrix.block<1, 2>(0, 0).transpose(); // 提取第一行的前两列
-                    colVec1.segment<2>(2) = temp_matrix.block<1, 2>(3, 0).transpose(); // 提取第四行的前两列
-                    colVec1.segment<2>(4) = temp_matrix.block<1, 2>(2, 0).transpose(); // 提取第三行的前两列
+                    colVec1.segment<2>(0) = mfLegCmdCompPos.block<1, 2>(0, 0).transpose(); // 提取第一行的前两列
+                    colVec1.segment<2>(2) = mfLegCmdCompPos.block<1, 2>(3, 0).transpose(); // 提取第四行的前两列
+                    colVec1.segment<2>(4) = mfLegCmdCompPos.block<1, 2>(2, 0).transpose(); // 提取第三行的前两列
                     input = colVec1;
+                    for(int i=0; i<6; i++) inputxd(i) = input(i);
+                    output = fnn_outputcpt(inputxd);
+                    //--needed to be checked by Weilong--
+                    mfLegCmdCompPos(0,2) = output(0);
+                    mfLegCmdCompPos(3,2) = output(1);
+                    mfLegCmdCompPos(2,2) = output(2);
                     break;
                 case 2:
                     // 创建一个 6x1 的列向量，用于存储提取的元素
                     
-                    colVec2.segment<2>(0) = temp_matrix.block<1, 2>(3, 0).transpose(); // 提取第四行的前两列
-                    colVec2.segment<2>(2) = temp_matrix.block<1, 2>(0, 0).transpose(); // 提取第一行的前两列
-                    colVec2.segment<2>(4) = temp_matrix.block<1, 2>(1, 0).transpose(); // 提取第二行的前两列
+                    colVec2.segment<2>(0) = mfLegCmdCompPos.block<1, 2>(3, 0).transpose(); // 提取第四行的前两列
+                    colVec2.segment<2>(2) = mfLegCmdCompPos.block<1, 2>(0, 0).transpose(); // 提取第一行的前两列
+                    colVec2.segment<2>(4) = mfLegCmdCompPos.block<1, 2>(1, 0).transpose(); // 提取第二行的前两列
                     input = colVec2;
+                    for(int i=0; i<6; i++) inputxd(i) = input(i);
+                    output = fnn_outputcpt(inputxd);
+                    //--needed to be checked by Weilong--
+                    mfLegCmdCompPos(3,2) = output(0);
+                    mfLegCmdCompPos(0,2) = output(1);
+                    mfLegCmdCompPos(1,2) = output(2);
                     break;
                 case 3:
                     // 创建一个 6x1 的列向量，用于存储提取的元素
                     
-                    colVec3.segment<2>(0) = temp_matrix.block<1, 2>(2, 0).transpose(); // 提取第三行的前两列
-                    colVec3.segment<2>(2) = temp_matrix.block<1, 2>(1, 0).transpose(); // 提取第二行的前两列
-                    colVec3.segment<2>(4) = temp_matrix.block<1, 2>(0, 0).transpose(); // 提取第一行的前两列
+                    colVec3.segment<2>(0) = mfLegCmdCompPos.block<1, 2>(2, 0).transpose(); // 提取第三行的前两列
+                    colVec3.segment<2>(2) = mfLegCmdCompPos.block<1, 2>(1, 0).transpose(); // 提取第二行的前两列
+                    colVec3.segment<2>(4) = mfLegCmdCompPos.block<1, 2>(0, 0).transpose(); // 提取第一行的前两列
                     input = colVec3;
+                    for(int i=0; i<6; i++) inputxd(i) = input(i);
+                    output = fnn_outputcpt(inputxd);
+                    //--needed to be checked by Weilong--
+                    mfLegCmdCompPos(2,2) = output(0);
+                    mfLegCmdCompPos(1,2) = output(1);
+                    mfLegCmdCompPos(0,2) = output(2);
                     break;
             }
-        } 
+        // } 
 
-        Matrix<float, 3, 1> output(3);
-        VectorXd inputxd(6);
-        for(int i=0; i<6; i++) inputxd(i) = input(i);
-        output = fnn_outputcpt(inputxd);
+        
+        
         mfCompensationZ = output;
 
         //结束   
