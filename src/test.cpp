@@ -158,10 +158,8 @@ float  float_initPos[12]={   70.0,65.5,-30.0,
             cout<<ls<<" ";
         }
         cout<<endl;
-        for (int index=0; index<3; index++)
-        {
-            outFile << rbt.mfCompensationZ(index) << " ";
-        }
+
+        outFile << rbt.mfLegCmdCompPos(0,2) <<  " " << rbt.mfLegCmdPos(0,2) <<  " ";
         outFile << std::endl;
         cout<<"mfLegCmdCompPos: \n"<<rbt.mfLegCmdCompPos<<"\n";//<<"mfJointCmdPos: \n"<<rbt.mfJointCmdPos<<endl;
 
