@@ -78,10 +78,6 @@ qpOASES.hpp
 controlhelper.h
 ../include/MotionControl/controlhelper.h
 
-../include/MotionControl/robotcontrol.h
-gebot.h
-../include/MotionControl/gebot.h
-
 ../include/MotionControl/udpsocket.h
 cstdio
 -
@@ -94,28 +90,6 @@ netinet/in.h
 arpa/inet.h
 -
 sys/socket.h
--
-
-../include/SVnPUMPnIMU/ADS1x15.h
-iostream
--
-unordered_map
--
-thread
--
-chrono
--
-stdexcept
--
-cassert
--
-wiringPiI2C.h
--
-sys/time.h
--
-time.h
--
-unistd.h
 -
 
 ../include/SVnPUMPnIMU/REG.h
@@ -292,9 +266,7 @@ port_handler.h
 stdint.h
 -
 
-/home/pi/Desktop/FGC-WCR-fnnInferBoost/src/test.cpp
-robotcontrol.h
-/home/pi/Desktop/FGC-WCR-fnnInferBoost/src/robotcontrol.h
-ADS1x15.h
-/home/pi/Desktop/FGC-WCR-fnnInferBoost/src/ADS1x15.h
+/home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp
+gebot.h
+/home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.h
 

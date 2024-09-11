@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named main
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 src/INA219/GestionI2C.o: src/INA219/GestionI2C.cpp.o
 
@@ -129,7 +129,7 @@ src/INA219/GestionI2C.o: src/INA219/GestionI2C.cpp.o
 
 # target to build an object file
 src/INA219/GestionI2C.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionI2C.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.o
 .PHONY : src/INA219/GestionI2C.cpp.o
 
 src/INA219/GestionI2C.i: src/INA219/GestionI2C.cpp.i
@@ -138,7 +138,7 @@ src/INA219/GestionI2C.i: src/INA219/GestionI2C.cpp.i
 
 # target to preprocess a source file
 src/INA219/GestionI2C.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionI2C.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.i
 .PHONY : src/INA219/GestionI2C.cpp.i
 
 src/INA219/GestionI2C.s: src/INA219/GestionI2C.cpp.s
@@ -147,7 +147,7 @@ src/INA219/GestionI2C.s: src/INA219/GestionI2C.cpp.s
 
 # target to generate assembly for a file
 src/INA219/GestionI2C.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionI2C.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.s
 .PHONY : src/INA219/GestionI2C.cpp.s
 
 src/INA219/GestionINA219.o: src/INA219/GestionINA219.cpp.o
@@ -156,7 +156,7 @@ src/INA219/GestionINA219.o: src/INA219/GestionINA219.cpp.o
 
 # target to build an object file
 src/INA219/GestionINA219.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionINA219.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.o
 .PHONY : src/INA219/GestionINA219.cpp.o
 
 src/INA219/GestionINA219.i: src/INA219/GestionINA219.cpp.i
@@ -165,7 +165,7 @@ src/INA219/GestionINA219.i: src/INA219/GestionINA219.cpp.i
 
 # target to preprocess a source file
 src/INA219/GestionINA219.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionINA219.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.i
 .PHONY : src/INA219/GestionINA219.cpp.i
 
 src/INA219/GestionINA219.s: src/INA219/GestionINA219.cpp.s
@@ -174,7 +174,7 @@ src/INA219/GestionINA219.s: src/INA219/GestionINA219.cpp.s
 
 # target to generate assembly for a file
 src/INA219/GestionINA219.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionINA219.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.s
 .PHONY : src/INA219/GestionINA219.cpp.s
 
 src/INA219/GestionPin.o: src/INA219/GestionPin.cpp.o
@@ -183,7 +183,7 @@ src/INA219/GestionPin.o: src/INA219/GestionPin.cpp.o
 
 # target to build an object file
 src/INA219/GestionPin.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionPin.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionPin.cpp.o
 .PHONY : src/INA219/GestionPin.cpp.o
 
 src/INA219/GestionPin.i: src/INA219/GestionPin.cpp.i
@@ -192,7 +192,7 @@ src/INA219/GestionPin.i: src/INA219/GestionPin.cpp.i
 
 # target to preprocess a source file
 src/INA219/GestionPin.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionPin.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionPin.cpp.i
 .PHONY : src/INA219/GestionPin.cpp.i
 
 src/INA219/GestionPin.s: src/INA219/GestionPin.cpp.s
@@ -201,7 +201,7 @@ src/INA219/GestionPin.s: src/INA219/GestionPin.cpp.s
 
 # target to generate assembly for a file
 src/INA219/GestionPin.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionPin.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionPin.cpp.s
 .PHONY : src/INA219/GestionPin.cpp.s
 
 src/INA219/GestionPinGPIO.o: src/INA219/GestionPinGPIO.cpp.o
@@ -210,7 +210,7 @@ src/INA219/GestionPinGPIO.o: src/INA219/GestionPinGPIO.cpp.o
 
 # target to build an object file
 src/INA219/GestionPinGPIO.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionPinGPIO.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.o
 .PHONY : src/INA219/GestionPinGPIO.cpp.o
 
 src/INA219/GestionPinGPIO.i: src/INA219/GestionPinGPIO.cpp.i
@@ -219,7 +219,7 @@ src/INA219/GestionPinGPIO.i: src/INA219/GestionPinGPIO.cpp.i
 
 # target to preprocess a source file
 src/INA219/GestionPinGPIO.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionPinGPIO.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.i
 .PHONY : src/INA219/GestionPinGPIO.cpp.i
 
 src/INA219/GestionPinGPIO.s: src/INA219/GestionPinGPIO.cpp.s
@@ -228,7 +228,7 @@ src/INA219/GestionPinGPIO.s: src/INA219/GestionPinGPIO.cpp.s
 
 # target to generate assembly for a file
 src/INA219/GestionPinGPIO.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/INA219/GestionPinGPIO.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.s
 .PHONY : src/INA219/GestionPinGPIO.cpp.s
 
 src/MotionControl/controlhelper.o: src/MotionControl/controlhelper.cpp.o
@@ -237,7 +237,7 @@ src/MotionControl/controlhelper.o: src/MotionControl/controlhelper.cpp.o
 
 # target to build an object file
 src/MotionControl/controlhelper.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/controlhelper.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.o
 .PHONY : src/MotionControl/controlhelper.cpp.o
 
 src/MotionControl/controlhelper.i: src/MotionControl/controlhelper.cpp.i
@@ -246,7 +246,7 @@ src/MotionControl/controlhelper.i: src/MotionControl/controlhelper.cpp.i
 
 # target to preprocess a source file
 src/MotionControl/controlhelper.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/controlhelper.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.i
 .PHONY : src/MotionControl/controlhelper.cpp.i
 
 src/MotionControl/controlhelper.s: src/MotionControl/controlhelper.cpp.s
@@ -255,7 +255,7 @@ src/MotionControl/controlhelper.s: src/MotionControl/controlhelper.cpp.s
 
 # target to generate assembly for a file
 src/MotionControl/controlhelper.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/controlhelper.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.s
 .PHONY : src/MotionControl/controlhelper.cpp.s
 
 src/MotionControl/gebot.o: src/MotionControl/gebot.cpp.o
@@ -264,7 +264,7 @@ src/MotionControl/gebot.o: src/MotionControl/gebot.cpp.o
 
 # target to build an object file
 src/MotionControl/gebot.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/gebot.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/gebot.cpp.o
 .PHONY : src/MotionControl/gebot.cpp.o
 
 src/MotionControl/gebot.i: src/MotionControl/gebot.cpp.i
@@ -273,7 +273,7 @@ src/MotionControl/gebot.i: src/MotionControl/gebot.cpp.i
 
 # target to preprocess a source file
 src/MotionControl/gebot.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/gebot.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/gebot.cpp.i
 .PHONY : src/MotionControl/gebot.cpp.i
 
 src/MotionControl/gebot.s: src/MotionControl/gebot.cpp.s
@@ -282,7 +282,7 @@ src/MotionControl/gebot.s: src/MotionControl/gebot.cpp.s
 
 # target to generate assembly for a file
 src/MotionControl/gebot.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/gebot.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/gebot.cpp.s
 .PHONY : src/MotionControl/gebot.cpp.s
 
 src/MotionControl/leg.o: src/MotionControl/leg.cpp.o
@@ -291,7 +291,7 @@ src/MotionControl/leg.o: src/MotionControl/leg.cpp.o
 
 # target to build an object file
 src/MotionControl/leg.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/leg.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/leg.cpp.o
 .PHONY : src/MotionControl/leg.cpp.o
 
 src/MotionControl/leg.i: src/MotionControl/leg.cpp.i
@@ -300,7 +300,7 @@ src/MotionControl/leg.i: src/MotionControl/leg.cpp.i
 
 # target to preprocess a source file
 src/MotionControl/leg.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/leg.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/leg.cpp.i
 .PHONY : src/MotionControl/leg.cpp.i
 
 src/MotionControl/leg.s: src/MotionControl/leg.cpp.s
@@ -309,7 +309,7 @@ src/MotionControl/leg.s: src/MotionControl/leg.cpp.s
 
 # target to generate assembly for a file
 src/MotionControl/leg.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/leg.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/leg.cpp.s
 .PHONY : src/MotionControl/leg.cpp.s
 
 src/MotionControl/robotcontrol.o: src/MotionControl/robotcontrol.cpp.o
@@ -318,7 +318,7 @@ src/MotionControl/robotcontrol.o: src/MotionControl/robotcontrol.cpp.o
 
 # target to build an object file
 src/MotionControl/robotcontrol.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/robotcontrol.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.o
 .PHONY : src/MotionControl/robotcontrol.cpp.o
 
 src/MotionControl/robotcontrol.i: src/MotionControl/robotcontrol.cpp.i
@@ -327,7 +327,7 @@ src/MotionControl/robotcontrol.i: src/MotionControl/robotcontrol.cpp.i
 
 # target to preprocess a source file
 src/MotionControl/robotcontrol.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/robotcontrol.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.i
 .PHONY : src/MotionControl/robotcontrol.cpp.i
 
 src/MotionControl/robotcontrol.s: src/MotionControl/robotcontrol.cpp.s
@@ -336,7 +336,7 @@ src/MotionControl/robotcontrol.s: src/MotionControl/robotcontrol.cpp.s
 
 # target to generate assembly for a file
 src/MotionControl/robotcontrol.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/robotcontrol.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.s
 .PHONY : src/MotionControl/robotcontrol.cpp.s
 
 src/MotionControl/udpsocket.o: src/MotionControl/udpsocket.cpp.o
@@ -345,7 +345,7 @@ src/MotionControl/udpsocket.o: src/MotionControl/udpsocket.cpp.o
 
 # target to build an object file
 src/MotionControl/udpsocket.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/udpsocket.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.o
 .PHONY : src/MotionControl/udpsocket.cpp.o
 
 src/MotionControl/udpsocket.i: src/MotionControl/udpsocket.cpp.i
@@ -354,7 +354,7 @@ src/MotionControl/udpsocket.i: src/MotionControl/udpsocket.cpp.i
 
 # target to preprocess a source file
 src/MotionControl/udpsocket.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/udpsocket.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.i
 .PHONY : src/MotionControl/udpsocket.cpp.i
 
 src/MotionControl/udpsocket.s: src/MotionControl/udpsocket.cpp.s
@@ -363,7 +363,7 @@ src/MotionControl/udpsocket.s: src/MotionControl/udpsocket.cpp.s
 
 # target to generate assembly for a file
 src/MotionControl/udpsocket.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/MotionControl/udpsocket.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.s
 .PHONY : src/MotionControl/udpsocket.cpp.s
 
 src/SVnPUMPnIMU/ADS1x15.o: src/SVnPUMPnIMU/ADS1x15.cpp.o
@@ -372,7 +372,7 @@ src/SVnPUMPnIMU/ADS1x15.o: src/SVnPUMPnIMU/ADS1x15.cpp.o
 
 # target to build an object file
 src/SVnPUMPnIMU/ADS1x15.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o
 .PHONY : src/SVnPUMPnIMU/ADS1x15.cpp.o
 
 src/SVnPUMPnIMU/ADS1x15.i: src/SVnPUMPnIMU/ADS1x15.cpp.i
@@ -381,7 +381,7 @@ src/SVnPUMPnIMU/ADS1x15.i: src/SVnPUMPnIMU/ADS1x15.cpp.i
 
 # target to preprocess a source file
 src/SVnPUMPnIMU/ADS1x15.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/ADS1x15.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.i
 .PHONY : src/SVnPUMPnIMU/ADS1x15.cpp.i
 
 src/SVnPUMPnIMU/ADS1x15.s: src/SVnPUMPnIMU/ADS1x15.cpp.s
@@ -390,7 +390,7 @@ src/SVnPUMPnIMU/ADS1x15.s: src/SVnPUMPnIMU/ADS1x15.cpp.s
 
 # target to generate assembly for a file
 src/SVnPUMPnIMU/ADS1x15.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/ADS1x15.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.s
 .PHONY : src/SVnPUMPnIMU/ADS1x15.cpp.s
 
 src/SVnPUMPnIMU/api.o: src/SVnPUMPnIMU/api.cpp.o
@@ -399,7 +399,7 @@ src/SVnPUMPnIMU/api.o: src/SVnPUMPnIMU/api.cpp.o
 
 # target to build an object file
 src/SVnPUMPnIMU/api.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/api.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.o
 .PHONY : src/SVnPUMPnIMU/api.cpp.o
 
 src/SVnPUMPnIMU/api.i: src/SVnPUMPnIMU/api.cpp.i
@@ -408,7 +408,7 @@ src/SVnPUMPnIMU/api.i: src/SVnPUMPnIMU/api.cpp.i
 
 # target to preprocess a source file
 src/SVnPUMPnIMU/api.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/api.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.i
 .PHONY : src/SVnPUMPnIMU/api.cpp.i
 
 src/SVnPUMPnIMU/api.s: src/SVnPUMPnIMU/api.cpp.s
@@ -417,7 +417,7 @@ src/SVnPUMPnIMU/api.s: src/SVnPUMPnIMU/api.cpp.s
 
 # target to generate assembly for a file
 src/SVnPUMPnIMU/api.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/api.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.s
 .PHONY : src/SVnPUMPnIMU/api.cpp.s
 
 src/SVnPUMPnIMU/i2c.o: src/SVnPUMPnIMU/i2c.c.o
@@ -426,7 +426,7 @@ src/SVnPUMPnIMU/i2c.o: src/SVnPUMPnIMU/i2c.c.o
 
 # target to build an object file
 src/SVnPUMPnIMU/i2c.c.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/i2c.c.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.o
 .PHONY : src/SVnPUMPnIMU/i2c.c.o
 
 src/SVnPUMPnIMU/i2c.i: src/SVnPUMPnIMU/i2c.c.i
@@ -435,7 +435,7 @@ src/SVnPUMPnIMU/i2c.i: src/SVnPUMPnIMU/i2c.c.i
 
 # target to preprocess a source file
 src/SVnPUMPnIMU/i2c.c.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/i2c.c.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.i
 .PHONY : src/SVnPUMPnIMU/i2c.c.i
 
 src/SVnPUMPnIMU/i2c.s: src/SVnPUMPnIMU/i2c.c.s
@@ -444,7 +444,7 @@ src/SVnPUMPnIMU/i2c.s: src/SVnPUMPnIMU/i2c.c.s
 
 # target to generate assembly for a file
 src/SVnPUMPnIMU/i2c.c.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/i2c.c.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.s
 .PHONY : src/SVnPUMPnIMU/i2c.c.s
 
 src/SVnPUMPnIMU/wit_c_sdk.o: src/SVnPUMPnIMU/wit_c_sdk.c.o
@@ -453,7 +453,7 @@ src/SVnPUMPnIMU/wit_c_sdk.o: src/SVnPUMPnIMU/wit_c_sdk.c.o
 
 # target to build an object file
 src/SVnPUMPnIMU/wit_c_sdk.c.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o
 .PHONY : src/SVnPUMPnIMU/wit_c_sdk.c.o
 
 src/SVnPUMPnIMU/wit_c_sdk.i: src/SVnPUMPnIMU/wit_c_sdk.c.i
@@ -462,7 +462,7 @@ src/SVnPUMPnIMU/wit_c_sdk.i: src/SVnPUMPnIMU/wit_c_sdk.c.i
 
 # target to preprocess a source file
 src/SVnPUMPnIMU/wit_c_sdk.c.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/wit_c_sdk.c.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.i
 .PHONY : src/SVnPUMPnIMU/wit_c_sdk.c.i
 
 src/SVnPUMPnIMU/wit_c_sdk.s: src/SVnPUMPnIMU/wit_c_sdk.c.s
@@ -471,7 +471,7 @@ src/SVnPUMPnIMU/wit_c_sdk.s: src/SVnPUMPnIMU/wit_c_sdk.c.s
 
 # target to generate assembly for a file
 src/SVnPUMPnIMU/wit_c_sdk.c.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SVnPUMPnIMU/wit_c_sdk.c.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.s
 .PHONY : src/SVnPUMPnIMU/wit_c_sdk.c.s
 
 src/dynamixel/dynamixel.o: src/dynamixel/dynamixel.cpp.o
@@ -480,7 +480,7 @@ src/dynamixel/dynamixel.o: src/dynamixel/dynamixel.cpp.o
 
 # target to build an object file
 src/dynamixel/dynamixel.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/dynamixel/dynamixel.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.o
 .PHONY : src/dynamixel/dynamixel.cpp.o
 
 src/dynamixel/dynamixel.i: src/dynamixel/dynamixel.cpp.i
@@ -489,7 +489,7 @@ src/dynamixel/dynamixel.i: src/dynamixel/dynamixel.cpp.i
 
 # target to preprocess a source file
 src/dynamixel/dynamixel.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/dynamixel/dynamixel.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.i
 .PHONY : src/dynamixel/dynamixel.cpp.i
 
 src/dynamixel/dynamixel.s: src/dynamixel/dynamixel.cpp.s
@@ -498,35 +498,35 @@ src/dynamixel/dynamixel.s: src/dynamixel/dynamixel.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel/dynamixel.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/dynamixel/dynamixel.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.s
 .PHONY : src/dynamixel/dynamixel.cpp.s
 
-src/test.o: src/test.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : src/test.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/test.i: src/test.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : src/test.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/test.s: src/test.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : src/test.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -535,7 +535,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... main"
 	@echo "... edit_cache"
 	@echo "... src/INA219/GestionI2C.o"
 	@echo "... src/INA219/GestionI2C.i"
@@ -579,9 +579,9 @@ help:
 	@echo "... src/dynamixel/dynamixel.o"
 	@echo "... src/dynamixel/dynamixel.i"
 	@echo "... src/dynamixel/dynamixel.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

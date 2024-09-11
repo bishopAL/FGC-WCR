@@ -60,197 +60,197 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/main.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o: ../src/SVnPUMPnIMU/ADS1x15.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/ADS1x15.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/ADS1x15.cpp
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/ADS1x15.cpp > CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/ADS1x15.cpp > CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.i
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/ADS1x15.cpp -o CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/ADS1x15.cpp -o CMakeFiles/main.dir/src/SVnPUMPnIMU/ADS1x15.cpp.s
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.o: ../src/SVnPUMPnIMU/api.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/api.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/api.cpp
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/api.cpp > CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/api.cpp > CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.i
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/api.cpp -o CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/api.cpp -o CMakeFiles/main.dir/src/SVnPUMPnIMU/api.cpp.s
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.o: ../src/SVnPUMPnIMU/i2c.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.o   -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/i2c.c
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.o   -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/i2c.c
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/i2c.c > CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.i
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/i2c.c > CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.i
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/i2c.c -o CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.s
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/i2c.c -o CMakeFiles/main.dir/src/SVnPUMPnIMU/i2c.c.s
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o: ../src/SVnPUMPnIMU/wit_c_sdk.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o   -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/wit_c_sdk.c
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.o   -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/wit_c_sdk.c
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/wit_c_sdk.c > CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.i
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/wit_c_sdk.c > CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.i
 
 CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/wit_c_sdk.c -o CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.s
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/SVnPUMPnIMU/wit_c_sdk.c -o CMakeFiles/main.dir/src/SVnPUMPnIMU/wit_c_sdk.c.s
 
 CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.o: ../src/INA219/GestionI2C.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionI2C.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionI2C.cpp
 
 CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionI2C.cpp > CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionI2C.cpp > CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.i
 
 CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionI2C.cpp -o CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionI2C.cpp -o CMakeFiles/main.dir/src/INA219/GestionI2C.cpp.s
 
 CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.o: ../src/INA219/GestionINA219.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionINA219.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionINA219.cpp
 
 CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionINA219.cpp > CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionINA219.cpp > CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.i
 
 CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionINA219.cpp -o CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionINA219.cpp -o CMakeFiles/main.dir/src/INA219/GestionINA219.cpp.s
 
 CMakeFiles/main.dir/src/INA219/GestionPin.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/INA219/GestionPin.cpp.o: ../src/INA219/GestionPin.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/INA219/GestionPin.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionPin.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPin.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionPin.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPin.cpp
 
 CMakeFiles/main.dir/src/INA219/GestionPin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/INA219/GestionPin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPin.cpp > CMakeFiles/main.dir/src/INA219/GestionPin.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPin.cpp > CMakeFiles/main.dir/src/INA219/GestionPin.cpp.i
 
 CMakeFiles/main.dir/src/INA219/GestionPin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/INA219/GestionPin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPin.cpp -o CMakeFiles/main.dir/src/INA219/GestionPin.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPin.cpp -o CMakeFiles/main.dir/src/INA219/GestionPin.cpp.s
 
 CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.o: ../src/INA219/GestionPinGPIO.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPinGPIO.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPinGPIO.cpp
 
 CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPinGPIO.cpp > CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPinGPIO.cpp > CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.i
 
 CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPinGPIO.cpp -o CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/INA219/GestionPinGPIO.cpp -o CMakeFiles/main.dir/src/INA219/GestionPinGPIO.cpp.s
 
 CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.o: ../src/MotionControl/controlhelper.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/controlhelper.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/controlhelper.cpp
 
 CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/controlhelper.cpp > CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/controlhelper.cpp > CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.i
 
 CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/controlhelper.cpp -o CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/controlhelper.cpp -o CMakeFiles/main.dir/src/MotionControl/controlhelper.cpp.s
 
 CMakeFiles/main.dir/src/MotionControl/gebot.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MotionControl/gebot.cpp.o: ../src/MotionControl/gebot.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/MotionControl/gebot.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/gebot.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/gebot.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp
 
 CMakeFiles/main.dir/src/MotionControl/gebot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/MotionControl/gebot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp > CMakeFiles/main.dir/src/MotionControl/gebot.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp > CMakeFiles/main.dir/src/MotionControl/gebot.cpp.i
 
 CMakeFiles/main.dir/src/MotionControl/gebot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/MotionControl/gebot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp -o CMakeFiles/main.dir/src/MotionControl/gebot.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/gebot.cpp -o CMakeFiles/main.dir/src/MotionControl/gebot.cpp.s
 
 CMakeFiles/main.dir/src/MotionControl/leg.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MotionControl/leg.cpp.o: ../src/MotionControl/leg.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/MotionControl/leg.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/leg.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/leg.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/leg.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/leg.cpp
 
 CMakeFiles/main.dir/src/MotionControl/leg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/MotionControl/leg.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/leg.cpp > CMakeFiles/main.dir/src/MotionControl/leg.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/leg.cpp > CMakeFiles/main.dir/src/MotionControl/leg.cpp.i
 
 CMakeFiles/main.dir/src/MotionControl/leg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/MotionControl/leg.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/leg.cpp -o CMakeFiles/main.dir/src/MotionControl/leg.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/leg.cpp -o CMakeFiles/main.dir/src/MotionControl/leg.cpp.s
 
 CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.o: ../src/MotionControl/robotcontrol.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/robotcontrol.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/robotcontrol.cpp
 
 CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/robotcontrol.cpp > CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/robotcontrol.cpp > CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.i
 
 CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/robotcontrol.cpp -o CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/robotcontrol.cpp -o CMakeFiles/main.dir/src/MotionControl/robotcontrol.cpp.s
 
 CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.o: ../src/MotionControl/udpsocket.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/udpsocket.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/udpsocket.cpp
 
 CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/udpsocket.cpp > CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/udpsocket.cpp > CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.i
 
 CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/udpsocket.cpp -o CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/MotionControl/udpsocket.cpp -o CMakeFiles/main.dir/src/MotionControl/udpsocket.cpp.s
 
 CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.o: ../src/dynamixel/dynamixel.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/dynamixel/dynamixel.cpp
+	/usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.o -c /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/dynamixel/dynamixel.cpp
 
 CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/dynamixel/dynamixel.cpp > CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.i
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/dynamixel/dynamixel.cpp > CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.i
 
 CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/dynamixel/dynamixel.cpp -o CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.s
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/FGC-WCR-fnnInferBoost/src/dynamixel/dynamixel.cpp -o CMakeFiles/main.dir/src/dynamixel/dynamixel.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
