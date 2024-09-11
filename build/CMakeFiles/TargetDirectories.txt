@@ -1,3 +1,0 @@
-/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles/rebuild_cache.dir
-/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles/main.dir
-/home/pi/Desktop/FGC-WCR-fnnInferBoost/build/CMakeFiles/edit_cache.dir
